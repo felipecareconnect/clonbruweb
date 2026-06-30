@@ -1,0 +1,168 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 24px;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    font-size: 12px;
+    vertical-align: super;
+}
+
+nav a {
+    color: #888;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #fff;
+}
+
+.btn-contato {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn-contato:hover {
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.hero-header {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.agency-tag {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #666;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.hero-header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    max-width: 90%;
+}
+
+/* Imagem Central (Mockup) */
+.mockup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+    background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0) 70%);
+    padding: 40px 0;
+}
+
+.hero-mockup {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    display: block;
+}
+
+/* Rodapé / Detalhes do Projeto */
+.hero-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 40px;
+}
+
+.project-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.meta-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 14px;
+}
+
+.meta-row .label {
+    color: #666;
+}
+
+.meta-row .value {
+    color: #fff;
+    font-weight: 600;
+}
+
+.project-description h3 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.project-description p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #aaa;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+    nav, .btn-contato {
+        display: none; /* Esconde para criar menu mobile depois */
+    }
+    .hero-header h1 {
+        font-size: 28px;
+    }
+    .hero-footer {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}

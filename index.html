@@ -11,11 +11,19 @@
 
     <header class="navbar">
         <div class="logo">Ezando<span>®</span></div>
-        <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#projeto" class="active">Projetos</a>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class="nav-menu">
+            <a href="#sobre" class="nav-link">Sobre</a>
+            <a href="#servicos" class="nav-link">Serviços</a>
+            <a href="#projeto" class="nav-link active">Projetos</a>
         </nav>
+        
         <button class="btn-contato">Fale Conosco</button>
     </header>
 
@@ -23,14 +31,18 @@
         
         <header class="hero-header">
             <p class="agency-tag">EZANDO DESIGN AGENCY</p>
-            <h1>EZANDO IS A FULL-SERVICE AGENCY DELIVERING STRATEGY, DESIGN, AND DIGITAL GROWTH.</h1>
+            <h1 class="fade-in">EZANDO IS A FULL-SERVICE AGENCY DELIVERING STRATEGY, DESIGN, AND DIGITAL GROWTH.</h1>
         </header>
 
-        <div class="mockup-section">
+        <div class="mockup-section fade-in">
+            <div class="action-badges">
+                <button class="badge-btn"><span class="icon">📁</span> Save</button>
+                <button class="badge-btn"><span class="icon">🔗</span> Permalink</button>
+            </div>
             <img src="notebook-mockup.png" alt="Ezando Website Mockup" class="hero-mockup">
         </div>
 
-        <footer class="hero-footer">
+        <footer class="hero-footer fade-in">
             <div class="project-meta">
                 <div class="meta-row">
                     <span class="label">Client</span>
@@ -54,5 +66,12 @@
 
     </main>
 
+    <button class="floating-like-btn" id="like-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+            <path d="M7.493 18.5c-.425 0-.82-.236-.975-.632A7.48 7.48 0 0 1 6 15.125c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.614-.309h4.133L11.33 5.436a2.25 2.25 0 0 1 4.228-1.423l1.83 4.27h2.362c1.104 0 2 .896 2 2v6.5c0 1.104-.896 2-2 2h-2.93a1 1 0 0 1-.743-.332l-1.921-2.162A1 1 0 0 0 13.4 15.5h-1.574a1 1 0 0 0-.712.298L8.21 18.22a1 1 0 0 1-.717.28z"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
